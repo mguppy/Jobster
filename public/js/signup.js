@@ -17,7 +17,14 @@ const signupFormHandler = async (event) => {
   console.log(email);
   console.log(password);
 
+  function checkPasswordLength(password) {
+    if(password.length < 6) {
+      alert("Please enter a password that is 6 characters or greater.");
+    }
+  }
+
   if (first_name && last_name && email && password) {
+    checkPasswordLength(password);
     const response = await fetch("/api/users/signup", {
       method: "POST",
       body: JSON.stringify({ first_name:first_name, last_name:last_name, email:email, password:password, image_url }),
