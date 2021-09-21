@@ -1,5 +1,4 @@
-# Jobster
-Group 2 - Jobster: the Job application tracker<br><br>
+# Jobster - Job Application Tracker
 Link to live deployed app: https://jobster-group-2.herokuapp.com/aboutus
 
 ## Purpose
